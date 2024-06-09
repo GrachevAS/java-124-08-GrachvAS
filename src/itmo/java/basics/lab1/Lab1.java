@@ -25,7 +25,7 @@ public class Lab1 {
             // В переменной result посчитайте следующее выражение: (number / 10) / 10. Результат выведите на консоль.
 
             int number = 10500;
-            int result1 = (number/10)/10;
+            double result1 = (double) (number/10)/10;
             System.out.println(result1);
 
             //Задача 4. Даны три числа: 3.6, 4.1, 5.9. В переменной result посчитайте произведение этих чисел.
@@ -60,18 +60,6 @@ public class Lab1 {
             }else if (b%2!=0){
                 System.out.println("Нечетное");
             }
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
 
