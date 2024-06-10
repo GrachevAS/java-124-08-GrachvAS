@@ -25,7 +25,47 @@ public class Home {
             this.rooms = rooms;
         }
 
-        @Override
+    public String getStreet() {
+        return street;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public double getSize() {
+        return size;
+    }
+
+    public int getFloors() {
+        return floors;
+    }
+
+    public int getRooms() {
+        return rooms;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public void setSize(double size) {
+        this.size = size;
+    }
+
+    public void setFloors(int floors) {
+        this.floors = floors;
+    }
+
+    public void setRooms(int rooms) {
+        this.rooms = rooms;
+    }
+
+    @Override
         public String toString() {
             return "Home{" +
                     "street='" + street + '\'' +
