@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class NewArray {
-    public static void CreateNewArray() {
+    public static void createNewArray() {
         Scanner scannerTemp = new Scanner(System.in);
         System.out.print("Введите длину массива:");
         int arrayLen = scannerTemp.nextInt();
@@ -16,7 +16,7 @@ public class NewArray {
         }
         System.out.println("Результат:" + Arrays.toString(array2));
     }
-    public static int[] ChangeArrayFirstLast (int [] arrey){
+    public static int[] changeArrayFirstLast (int [] arrey){
         int temp1=arrey[0];
         arrey[0]=arrey[arrey.length-1];
         arrey[arrey.length-1]=temp1;

@@ -69,14 +69,14 @@ public class Lab4 {
 
     //2.2	Напишите программу, которая считывает с клавиатуры длину массива (например, пользователь вводит цифру 4),
     // затем пользователь вводит 4 числа и на новой строке выводится массив из 4 элементов.
-        NewArray.CreateNewArray();
+        NewArray.createNewArray();
 
     //2.3.	Напишите метод, который меняет местами первый и последний элемент массива
         System.out.println("Исходный массив" + Arrays.toString(array));
-        System.out.println("Итоговый массив" + Arrays.toString(NewArray.ChangeArrayFirstLast(array)));
+        System.out.println("Итоговый массив" + Arrays.toString(NewArray.changeArrayFirstLast(array)));
     //2.4 Дан массив чисел. Найдите первое уникальное в этом массиве число
         int[] array2 = {1,2,3,1,2,4};
-      if (Check.FirstUnique(array2)==-1) System.out.println("Нет уникальных чисел");
-      else System.out.println("Первое уникальное число: "+Check.FirstUnique(array2));
+      if (Check.firstUnique(array2)==-1) System.out.println("Нет уникальных чисел");
+      else System.out.println("Первое уникальное число: "+Check.firstUnique(array2));
     }
 }

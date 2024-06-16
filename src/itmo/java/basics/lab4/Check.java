@@ -41,7 +41,7 @@ public class Check {
         }
         return false;
     }
-    public static int FirstUnique (int[] array){
+    public static int firstUnique (int[] array){
         for (int i = 0; i < array.length; i++) {
             boolean flag = true;
             for (int j = 0; j < array.length && flag; j++)
