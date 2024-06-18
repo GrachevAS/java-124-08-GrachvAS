@@ -7,15 +7,16 @@ public class Lab5 {
         System.out.println("Самое длинное слово: " + StringCheck.maxWordInString(string1));
 
         //2.	Написать метод, который проверяет является ли слово палиндромом
-       String string2 = "мадам";
+       String string2 = "казак";
        System.out.println("Слово: " + string2);
        if (StringCheck.stringIsPalindrom(string2)) System.out.println("Является палиндромом");
        else System.out.println("Не является палиндромом");
 
         //3.	Напишите метод, заменяющий в тексте все вхождения слова «бяка» на «[вырезано цензурой]».
         String string3 = "Строка для замены слов бяка";
-        String wordToCgange = "[вырезано цензурой]";
-        System.out.println(StringCheck.stringCenzura(string3, wordToCgange));
+        String stringWhatChange ="бяка";
+        String wordToChgange = "[вырезано цензурой]";
+        System.out.println(StringCheck.stringCenzura(string3, stringWhatChange, wordToChgange));
 
         //4.	Имеются две строки. Найти количество вхождений одной (являющейся подстрокой) в другую.
         String stringOne = "hellohellohello";

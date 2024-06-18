@@ -14,23 +14,16 @@ public class StringCheck {
         return maxWord;
     }
     public static boolean stringIsPalindrom (String string){
-        String StartString ="";
-        String EndString ="";
-        StringBuilder TempString = new StringBuilder();
-        StartString = string.substring(0, string.length() / 2);
-        if (string.length()%2==0){
-            EndString = string.substring(string.length() / 2, string.length());
-        }
-        else EndString = string.substring((string.length() / 2)+1, string.length());
-        TempString.append(EndString);
-        TempString.reverse();
-        EndString = TempString.toString();
-        if (StartString.equals(EndString)) return true;
+        StringBuilder tempString = new StringBuilder();
+        tempString.append(string);
+        tempString.reverse();
+
+        if (string.equals(tempString.toString())) return true;
         else return false;
     }
-    public static String stringCenzura (String string, String changeWord){
+    public static String stringCenzura (String string, String whatChange, String changeWord){
         String newString ="";
-        newString = string.replaceAll("бяка",changeWord);
+        newString = string.replaceAll(whatChange,changeWord);
         return newString;
     }
     public static int stringContain (String string1, String string2){
