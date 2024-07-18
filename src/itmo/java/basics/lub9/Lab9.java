@@ -61,12 +61,12 @@ public class Lab9 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите name:");
         String string = scanner.nextLine();
-
         User userFind = new User(string);
-        User targetUser = MapSearch.searchUser(users, userFind);
-        if (targetUser == null) {
+
+
+        if (!map.containsKey(userFind)) {
             System.out.println("Данный игрок отсутствует");
-        } else
-            System.out.println("Количество очков игрока " + string + " = " + map.get(targetUser));
+        } else System.out.println("Количество очков игрока " + string + " = " + map.get(userFind));
+
     }
 }
