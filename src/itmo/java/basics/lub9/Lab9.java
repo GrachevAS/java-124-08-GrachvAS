@@ -18,32 +18,32 @@ public class Lab9 {
         System.out.println(list);
         System.out.println(ListMethod.uniqCollection(list));
 
-////9.3
-//        List<Integer> bigList = new ArrayList<>();
-//        List<Integer> bigListSelection = new ArrayList<>();
-//        List<Integer> bigLinkedList = new LinkedList<>();
-//        List<Integer> bigLinkedListSelection = new ArrayList<>();
-//        for (int i=1;i<1000000;i++) {
-//            bigList.add((int) ((Math.random() * 10)));
-//            bigLinkedList.add((int) ((Math.random() * 10)));
-//        }
-//        long startBigList = currentTimeMillis();
-//        System.out.println(startBigList);
-//        for (int i = 0; i < 100000; i++) {
-//            bigListSelection.add(bigList.get((int) ((Math.random() * 1000000))));
-//        }
-//        long endBigList = currentTimeMillis();
-//        System.out.println(endBigList);
-//        System.out.println(endBigList-startBigList);
-//
-//        long startBigLinkedList = currentTimeMillis();
-//        System.out.println(startBigLinkedList);
-//        for (int i = 0; i < 100000; i++) {
-//            bigLinkedListSelection.add(bigLinkedList.get((int) ((Math.random() * 1000000))));
-//        }
-//        long endBigLinkedList = currentTimeMillis();
-//        System.out.println(endBigLinkedList);
-//        System.out.println(endBigLinkedList-startBigLinkedList);
+//9.3
+        List<Integer> bigList = new ArrayList<>();
+        List<Integer> bigListSelection = new ArrayList<>();
+        List<Integer> bigLinkedList = new LinkedList<>();
+        List<Integer> bigLinkedListSelection = new ArrayList<>();
+        for (int i=1;i<1000000;i++) {
+            bigList.add((int) ((Math.random() * 10)));
+            bigLinkedList.add((int) ((Math.random() * 10)));
+        }
+        long startBigList = currentTimeMillis();
+        System.out.println(startBigList);
+        for (int i = 0; i < 100000; i++) {
+            bigListSelection.add(bigList.get((int) ((Math.random() * 1000000))));
+        }
+        long endBigList = currentTimeMillis();
+        System.out.println(endBigList);
+        System.out.println(endBigList-startBigList);
+
+        long startBigLinkedList = currentTimeMillis();
+        System.out.println(startBigLinkedList);
+        for (int i = 0; i < 100000; i++) {
+            bigLinkedListSelection.add(bigLinkedList.get((int) ((Math.random() * 1000000))));
+        }
+        long endBigLinkedList = currentTimeMillis();
+        System.out.println(endBigLinkedList);
+        System.out.println(endBigLinkedList-startBigLinkedList);
 
 //9.4
         User ivanov = new User("Иванов");
