@@ -1,9 +1,11 @@
 package itmo.java.basics.lub9;
 
+import javax.swing.*;
 import java.util.*;
 import java.util.ArrayList;
 
 import static java.lang.System.currentTimeMillis;
+import static java.lang.System.setProperties;
 
 
 public class Lab9 {
@@ -16,7 +18,7 @@ public class Lab9 {
         System.out.println(list);
         System.out.println(ListMethod.uniqCollection(list));
 
-//9.3
+////9.3
 //        List<Integer> bigList = new ArrayList<>();
 //        List<Integer> bigListSelection = new ArrayList<>();
 //        List<Integer> bigLinkedList = new LinkedList<>();
@@ -60,10 +62,11 @@ public class Lab9 {
         System.out.print("Введите name:");
         String string = scanner.nextLine();
 
-        User targetUser = MapSearch.searchUser(users, string);
+        User userFind = new User(string);
+        User targetUser = MapSearch.searchUser(users, userFind);
         if (targetUser == null) {
             System.out.println("Данный игрок отсутствует");
         } else
-            System.out.println("Количество очков игрока " + string + " = " + MapSearch.SearchValueByKey(map, targetUser));
+            System.out.println("Количество очков игрока " + string + " = " + map.get(targetUser));
     }
 }

@@ -6,20 +6,19 @@ import java.util.Map;
 import java.util.Set;
 
 public class MapSearch {
-    public static User searchUser(Set<User> userSet, String name) {
+    public static User searchUser(Set<User> userSet, User user) {
         for (User element : userSet) {
-            if (element.getName().equals(name)) {
+            if (element.equals(user)) {
                 return element;
             }
-            ;
-        }
-        return null;
-    }
-
-    public static Integer SearchValueByKey(Map<User, Integer> map, User user) {
-        for (Map.Entry<User, Integer> pair : map.entrySet()) {
-            if (pair.getKey().equals(user)) return pair.getValue();
         }
         return null;
     }
 }
+//    public static Integer SearchValueByKey(Map<User, Integer> map, User user) {
+//        for (Map.Entry<User, Integer> pair : map.entrySet()) {
+//            if (pair.getKey().equals(user)) return pair.getValue();
+//        }
+//        return null;
+//    }
+//}
