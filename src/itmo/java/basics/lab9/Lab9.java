@@ -1,11 +1,9 @@
-package itmo.java.basics.lub9;
+package itmo.java.basics.lab9;
 
-import javax.swing.*;
 import java.util.*;
 import java.util.ArrayList;
 
 import static java.lang.System.currentTimeMillis;
-import static java.lang.System.setProperties;
 
 
 public class Lab9 {
