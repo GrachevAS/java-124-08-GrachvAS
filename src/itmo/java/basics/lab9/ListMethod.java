@@ -1,4 +1,4 @@
-package itmo.java.basics.lub9;
+package itmo.java.basics.lab9;
 
 import java.util.*;
 
